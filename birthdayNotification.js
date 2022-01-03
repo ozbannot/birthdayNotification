@@ -21,9 +21,6 @@ function getBirthDayNameList()
   for (var i = start_row; i < last_row; i++) {
     var slack_name = sheet.getRange(i, 1).getValue();
     var birthDay = sheet.getRange(i, 2).getValue();
-    if (slack_name != "") {
-      birthDayNameList.push([slack_name, birthDay]);    
-    }
   }
   return birthDayNameList;
 }
